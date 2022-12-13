@@ -1,5 +1,5 @@
 $(document ).ready(function() {
-    $('.select').select2({
+    $('.content__select').select2({
         minimumResultsForSearch: Infinity,
     });
 });
