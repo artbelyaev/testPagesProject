@@ -1,0 +1,23 @@
+.content {
+    .select2-container {
+        width: 350px;
+        height: 32px;
+
+        &--default {
+            .select2-selection {
+                &--single {
+                    border-radius: 0;
+                    border-color: red;
+                }
+            }
+        }
+
+        &--open {
+            .select2-dropdown {
+                &--above {
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}

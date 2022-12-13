@@ -1,0 +1,278 @@
+.about {
+  display: flex;
+  position: relative;
+  padding: 40px;
+  width: 100%; }
+  .about__left {
+    margin-top: 140px;
+    max-width: 36%;
+    height: 100%; }
+  .about__bookcase {
+    width: 100%;
+    height: auto; }
+  .about__hammer {
+    margin-top: 30px;
+    width: 100%;
+    height: auto; }
+  .about__right {
+    margin-top: 150px;
+    margin-left: 62px; }
+  .about__header {
+    font-family: Garamond;
+    font-size: 45px;
+    line-height: 59px;
+    font-weight: 400;
+    color: var(--white);
+    margin: 0; }
+  .about__tracery {
+    margin-top: 27px;
+    margin-left: 22px; }
+  .about__text {
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--white);
+    margin-top: 43px; }
+  .about__label {
+    display: flex; }
+  .about__photo {
+    width: 90px;
+    height: 90px;
+    margin-top: 32px; }
+  .about__inscription {
+    font-family: Garamond;
+    font-size: 40px;
+    line-height: 52px;
+    color: var(--white);
+    margin-top: 51px;
+    margin-left: 20px; }
+  .about__button {
+    display: flex;
+    margin-top: 45px; }
+
+.button--right {
+  margin-left: 30px;
+  width: 315px;
+  height: 126px; }
+
+.button--left {
+  width: 315px;
+  height: 126px; }
+
+.content {
+  margin: 20px 30px; }
+
+body {
+  --white: hsl(0, 0%, 100%);
+  --gold: hsl(41, 53%, 62%);
+  --dark: hsl(215, 28%, 12%);
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--dark);
+  font-family: 'Roboto', sans-serif; }
+
+body * {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+h1 {
+  padding: 0;
+  margin: 0; }
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+.header {
+  position: relative;
+  padding: 40px;
+  width: 100%;
+  background-image: url("../src/images/headerBg.jpg");
+  background-size: cover;
+  z-index: 0; }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(31, 39, 50, 0.81);
+    z-index: -1; }
+  .header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #4E555F; }
+  .header__middle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 34px;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #4E555F; }
+  .header__bottom {
+    position: relative;
+    padding-top: 130px;
+    padding-bottom: 130px; }
+  .header__tracery {
+    margin-left: 20px;
+    margin-bottom: 14px; }
+  .header__title {
+    font-size: 65px;
+    line-height: 78px;
+    color: var(--white);
+    margin-bottom: 20px;
+    max-width: 815px; }
+  .header__subtitle {
+    font-size: 22px;
+    line-height: 40px;
+    color: var(--gold);
+    margin-bottom: 28px;
+    max-width: 635px; }
+  .header__photo {
+    position: absolute;
+    width: 36%;
+    height: auto;
+    right: 0;
+    bottom: -40px; }
+
+.header-link {
+  display: flex;
+  align-items: center; }
+  .header-link__logo {
+    width: 58px;
+    height: 80px;
+    margin-right: 10px; }
+  .header-link__text {
+    font-size: 70px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--white); }
+
+.header-navigation__list {
+  display: flex;
+  align-items: center;
+  gap: 55px; }
+
+.header-navigation__link {
+  font-size: 22px;
+  line-height: 35px;
+  color: var(--white);
+  transition: color 0.2s linear; }
+  .header-navigation__link:hover {
+    color: var(--gold); }
+
+.header-contacts {
+  display: flex;
+  align-items: center; }
+  .header-contacts__item {
+    display: flex;
+    align-items: center; }
+    .header-contacts__item:first-child {
+      margin-right: 50px; }
+  .header-contacts__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    margin-right: 12px;
+    border-radius: 50%;
+    border: 2px solid var(--gold); }
+  .header-contacts__icon {
+    width: 18px;
+    height: 18px;
+    fill: var(--gold); }
+  .header-contacts__label {
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--gold); }
+  .header-contacts__link {
+    font-size: 22px;
+    line-height: 26px;
+    color: var(--white); }
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer; }
+  .button__text {
+    font-size: 22px; }
+  .button--opacity {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s linear; }
+    .button--opacity:hover {
+      background-color: rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.3); }
+    .button--opacity .button__text {
+      color: var(--white); }
+  .button--accent {
+    background-color: var(--gold);
+    border: 1px solid var(--gold); }
+    .button--accent .button__text {
+      color: var(--dark); }
+  .button--big {
+    min-height: 85px;
+    padding-left: 70px;
+    padding-right: 70px; }
+  .button--small {
+    min-height: 58px;
+    padding-left: 42px;
+    padding-right: 42px; }
+
+.content .select2-container {
+  width: 350px;
+  height: 32px; }
+  .content .select2-container--default .select2-selection--single {
+    border-radius: 0;
+    border-color: red; }
+  .content .select2-container--open .select2-dropdown--above {
+    border-radius: 0; }
+
+.tracery {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11px;
+  height: 11px;
+  border: 1px solid var(--gold); }
+  .tracery::before, .tracery::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 44px;
+    background-color: var(--gold); }
+  .tracery::before {
+    left: -1px; }
+  .tracery::after {
+    right: -1px; }
+  .tracery__col {
+    width: 7px;
+    height: 7px;
+    background-color: var(--gold); }
+    .tracery__col::before, .tracery__col::after {
+      content: '';
+      position: absolute;
+      left: -21px;
+      width: 95px;
+      height: 1px;
+      background-color: var(--gold); }
+    .tracery__col::before {
+      top: -1px; }
+    .tracery__col::after {
+      bottom: -1px; }

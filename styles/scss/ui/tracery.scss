@@ -1,0 +1,52 @@
+.tracery {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11px;
+    height: 11px;
+    border: 1px solid var(--gold);
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+        height: 44px;
+        background-color: var(--gold);
+    }
+
+    &::before {
+        left: -1px;
+    }
+
+    &::after {
+        right: -1px;
+    }
+
+    &__col {
+        width: 7px;
+        height: 7px;
+        background-color: var(--gold);
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            left: -21px;
+            width: 95px;
+            height: 1px;
+            background-color: var(--gold);
+        }
+
+        &::before {
+            top: -1px;
+        }
+
+        &::after {
+            bottom: -1px;
+        }
+    }
+}

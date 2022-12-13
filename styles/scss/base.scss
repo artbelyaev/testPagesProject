@@ -1,0 +1,37 @@
+body {
+    --white: hsl(0, 0%, 100%);
+    --gold: hsl(41, 53%, 62%);
+    --dark: hsl(215, 28%, 12%);
+
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark);
+    font-family: 'Roboto', sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}

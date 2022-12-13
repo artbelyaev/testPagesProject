@@ -1,0 +1,47 @@
+.button {
+    $self: &;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &__text {
+        font-size: 22px;
+    }
+
+    &--opacity {
+        background-color: hsla(0, 0%, 100%, 0.1);
+        border: 1px solid hsla(0, 0%, 100%, 0.1);
+        transition: background-color 0.2s linear;
+
+        &:hover {
+            background-color: hsla(0, 0%, 100%, 0.3);
+            border: 1px solid hsla(0, 0%, 100%, 0.3);
+        }
+
+        #{$self}__text {
+            color: var(--white);
+        }
+    }
+
+    &--accent {
+        background-color: var(--gold);
+        border: 1px solid var(--gold);
+
+        #{$self}__text {
+            color: var(--dark);
+        }
+    }
+
+    &--big {
+        min-height: 85px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    &--small {
+        min-height: 58px;
+        padding-left: 42px;
+        padding-right: 42px;
+    }
+}

@@ -1,0 +1,93 @@
+.about {
+    display: flex;
+    position: relative;
+    padding: 40px;
+    width: 100%;
+
+    &__left {
+        margin-top: 140px;
+        max-width: 36%;
+        height: 100%;
+    }
+
+    &__bookcase {
+        width: 100%;
+        height: auto;
+    }
+
+    &__hammer {
+        margin-top: 30px;
+        width: 100%;
+        height: auto;
+    }
+
+    &__right {
+        margin-top: 150px;
+        margin-left: 62px;
+        
+    }
+
+    &__header {
+        font-family: Garamond;
+        font-size: 45px;
+        line-height: 59px;
+        font-weight: 400;
+        color: var(--white);
+        margin: 0;
+    }
+
+    &__tracery {
+        margin-top: 27px;
+        margin-left: 22px;
+    }
+
+    &__text {
+        font-size: 20px;
+        line-height: 32px;
+        color: var(--white);
+        margin-top: 43px;
+    
+    }
+
+    &__label{
+        display: flex;
+        
+    }
+
+    &__photo {
+        width: 90px;
+        height: 90px;
+        margin-top: 32px;
+    }
+
+    &__inscription{
+        font-family: Garamond;
+        font-size: 40px;
+        line-height: 52px;
+        color: var(--white);
+        margin-top: 51px;
+        margin-left: 20px;
+    }
+
+    &__button{
+        display: flex;
+        margin-top: 45px;
+    }
+}
+
+.button {
+    &--right {
+        margin-left: 30px;
+        width: 315px;
+        height: 126px;
+    }
+
+    &--left {
+        width: 315px;
+        height: 126px;
+    }
+}
+
+.content {
+    margin: 20px 30px;
+}
